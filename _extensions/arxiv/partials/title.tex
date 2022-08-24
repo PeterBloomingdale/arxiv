@@ -1,0 +1,15 @@
+\title{$title$}
+
+\author{
+  $for(by-author)$
+    {$by-author.name.literal$} \\
+    $for(it.affiliations)$
+    $it.name$ \\
+    $it.country$
+    $endfor$ \\
+    $if(it.email)$\href{mailto:$it.email$}{$it.email$}$endif$
+    $sep$ \and 
+  $endfor$}
+
+  \date{$date$}
+

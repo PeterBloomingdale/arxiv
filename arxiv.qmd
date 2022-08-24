@@ -1,0 +1,74 @@
+---
+title: "Really Cool Manuscript Title"
+format:
+  pdf:
+    keep-tex: true
+    template-partials: 
+      - _extensions\arxiv\partials\title.tex
+      - _extensions\arxiv\partials\doc-class.tex
+author:
+  - name: Peter Bloomingdale
+    affiliations:
+      - name: Boehringer Ingelheim
+        country: Boston, MA, USA
+    email: email@boehringer-ingelheim.com
+  - name: Antari Khot
+    affiliations:
+      - name: Takeda
+        country: Boston, MA, USA
+    email: email@takeda.com
+date: August 23, 2022
+abstract: |
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac turpis egestas maecenas pharetra convallis posuere. Lectus nulla at volutpat diam ut. Neque vitae tempus quam pellentesque. Nulla facilisi cras fermentum odio eu feugiat pretium. Enim tortor at auctor urna nunc. Leo vel fringilla est ullamcorper eget. Enim eu turpis egestas pretium. Viverra vitae congue eu consequat ac felis. Eu mi bibendum neque egestas congue quisque. Ornare quam viverra orci sagittis eu volutpat odio facilisis mauris. Dignissim suspendisse in est ante in nibh mauris. Semper viverra nam libero justo laoreet sit.
+bibliography: bibliography.bib
+csl: nature.csl
+---
+
+## Introduction
+
+## Methods
+
+## Results
+
+## Discussion
+
+## Supplementary Information
+
+### Examples for coloring text:
+
+\textcolor{red}{This is how you color text}
+
+\textcolor[HTML]{4f31e4}{Custom color}
+
+### Command for Page Break `{{< pagebreak >}}`
+
+{{< pagebreak >}}
+
+### Code chunk {#sec-chunks}
+
+This format hide chunks by default as option has been set in `_extension.yml` file.
+
+```{r}
+#| prompt: true
+# Loading some data but this chunk won't be shown.
+```
+
+But you can set `echo` option to `true` locally in the chunk
+
+```{r}
+#| echo: true
+# This chunk will be shown. 
+```
+
+
+### Using references 
+
+The easiest way to add references is to go to [Google Scholar](https://scholar.google.com/). Click the "Cite" icon under the paper of interest. Copy the **BibTex** text and paste it into the bibliography.bib file.
+
+This research is really lame.[@jones2019deorphanizing]
+
+### References 
+
+:::{#refs}
+
+:::
