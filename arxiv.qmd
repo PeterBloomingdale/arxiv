@@ -4,8 +4,8 @@ format:
   pdf:
     keep-tex: true
     template-partials: 
-      - _extensions\arxiv\partials\title.tex
-      - _extensions\arxiv\partials\doc-class.tex
+      - _extensions\PeterBloomingdale\arxiv\partials\title.tex
+      - _extensions\PeterBloomingdale\arxiv\partials\doc-class.tex
 author:
   - name: Peter Bloomingdale
     affiliations:
