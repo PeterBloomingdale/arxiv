@@ -4,8 +4,8 @@ format:
   pdf:
     keep-tex: true
     template-partials: 
-      - title.tex
-      - doc-class.tex
+      - partials/title.tex
+      - partials/doc-class.tex
 author:
   - name: Peter Bloomingdale
     affiliations:
